@@ -1,0 +1,17 @@
+[
+    {
+        "username": "Nedak1",
+        "password": "Nedakpassword1",
+        "accountFile": "users/66953.json"
+    },
+    {
+        "username": "Kaden1",
+        "password": "Kadenpassword1",
+        "accountFile": "users/45454.json"
+    },
+    {
+        "username": "Student1",
+        "password": "Studentpassword1",
+        "accountFile": "users/17241.json"
+    }
+]
