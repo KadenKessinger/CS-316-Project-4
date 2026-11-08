@@ -5,10 +5,10 @@ const fs = require("fs");
 const path = require("path");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // File locations
-const dataFolder = path.join(__dirname, "data");
+const dataFolder = process.env.DATA_DIR || path.join(__dirname, "data");
 const usersFolder = path.join(dataFolder, "users");
 const accountsFile = path.join(dataFolder, "accounts.json");
 
@@ -249,6 +249,6 @@ app.get("/api/records", (req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => {
-    console.log(`Survey website running at http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Survey website running on port ${PORT}`);
 });
